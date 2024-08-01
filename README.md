@@ -1,6 +1,6 @@
 # Waktu class
 
-Translate to Indonesian for weekday names, month names, and quarter names, inspired by [DateFormat][].
+Translate to Indonesian for weekday names, month names, and quarter names, inspired by [DateFormat](https://api.flutter.dev/flutter/intl/DateFormat-class.html).
 This package is also upgraded version from [format_indonesia](https://pub.dev/packages/format_indonesia)
 
 ## Example
