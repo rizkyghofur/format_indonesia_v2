@@ -1,3 +1,7 @@
+## 0.0.2
+
+- Fixed documentation and added example
+
 ## 0.0.1
 
-* TODO: Describe initial release.
+- Describe initial release.
