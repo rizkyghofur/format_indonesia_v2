@@ -1,10 +1,10 @@
 name: format_indonesia_v2
-description: Library for Indonesian formatting
-version: 0.0.1
+description: Library for Indonesian date and numeric formatting, it helps to reformat date and numeric variable to Indonesia language
+version: 0.0.2
 repository: https://github.com/rizkyghofur/format_indonesia_v2
 
 environment:
-  sdk: ">=3.4.4 <4.0.0"
+  sdk: ">=3.4.3 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
