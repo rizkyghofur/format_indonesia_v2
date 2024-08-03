@@ -1,3 +1,7 @@
+## 0.0.6
+
+- Downgrade Min Dart SDK to 3.0
+
 ## 0.0.5
 
 - Fixed dependencies and test files
