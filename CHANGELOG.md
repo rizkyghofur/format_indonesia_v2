@@ -1,3 +1,7 @@
+## 0.0.5
+
+- Fixed dependencies and test files
+
 ## 0.0.4
 
 - Added Rupiah as [String] & revised README.md

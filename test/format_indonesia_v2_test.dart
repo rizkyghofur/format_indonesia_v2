@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:format_indonesia_v2/format_indonesia_v2.dart';
 import 'package:test/test.dart';
 
@@ -10,148 +9,148 @@ void main() {
       'Januari|Februari|Maret|April|Mei|Juni|Juli|Agustus|September|Oktober|November|Desember';
   String regexKuartal = 'pertama|kedua|ketiga|keempat';
 
-  test('debugPrint E', () {
+  test('print E', () {
     String waktu = Waktu().E();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches(regexHariPendek));
   });
 
-  test('debugPrint EEEE', () {
+  test('print EEEE', () {
     String waktu = Waktu().EEEE();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches(regexHari));
   });
 
-  test('debugPrint LLL', () {
+  test('print LLL', () {
     String waktu = Waktu().LLL();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches(regexBulanPendek));
   });
 
-  test('debugPrint LLLL', () {
+  test('print LLLL', () {
     String waktu = Waktu().LLLL();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches(regexBulan));
   });
 
-  test('debugPrint MMM', () {
+  test('print MMM', () {
     String waktu = Waktu().MMM();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches(regexBulanPendek));
   });
 
-  test('debugPrint MMMd', () {
+  test('print MMMd', () {
     String waktu = Waktu().MMMd();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches('\\d{1,2}\\s($regexBulanPendek)'));
   });
 
-  test('debugPrint MMMEd', () {
+  test('print MMMEd', () {
     String waktu = Waktu().MMMEd();
-    debugPrint(waktu);
+    print(waktu);
     expect(
         waktu, matches('($regexHariPendek),\\s\\d{1,2}\\s($regexBulanPendek)'));
   });
 
-  test('debugPrint MMMM', () {
+  test('print MMMM', () {
     String waktu = Waktu().MMMM();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches(regexBulan));
   });
 
-  test('debugPrint MMMMd', () {
+  test('print MMMMd', () {
     String waktu = Waktu().MMMMd();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches('\\d{1,2}\\s($regexBulan)'));
   });
 
-  test('debugPrint MMMMEEEEd', () {
+  test('print MMMMEEEEd', () {
     String waktu = Waktu().MMMMEEEEd();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches('($regexHari),\\s\\d{1,2}\\s($regexBulan)'));
   });
 
-  test('debugPrint QQQQ', () {
+  test('print QQQQ', () {
     String waktu = Waktu().QQQQ();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches('Kuartal\\s($regexKuartal)'));
   });
 
-  test('debugPrint yMd', () {
+  test('print yMd', () {
     String waktu = Waktu().yMd();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches('\\d{1,2}/\\d{1,2}/\\d{1,4}'));
   });
 
-  test('debugPrint yMEd', () {
+  test('print yMEd', () {
     String waktu = Waktu().yMEd();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches('($regexHariPendek),\\s\\d{1,2}/\\d{1,2}/\\d{1,4}'));
   });
 
-  test('debugPrint yMMM', () {
+  test('print yMMM', () {
     String waktu = Waktu().yMMM();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches('($regexBulanPendek)\\s\\d{1,4}'));
   });
 
-  test('debugPrint yMMMd', () {
+  test('print yMMMd', () {
     String waktu = Waktu().yMMMd();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches('\\d{1,2}\\s($regexBulanPendek)\\s\\d{1,4}'));
   });
 
-  test('debugPrint yMMMEd', () {
+  test('print yMMMEd', () {
     String waktu = Waktu().yMMMEd();
-    debugPrint(waktu);
+    print(waktu);
     expect(
         waktu,
         matches(
             '($regexHariPendek),\\s\\d{1,2}\\s($regexBulanPendek)\\s\\d{1,4}'));
   });
 
-  test('debugPrint yMMMM', () {
+  test('print yMMMM', () {
     String waktu = Waktu().yMMMM();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches('($regexBulan)\\s\\d{1,4}'));
   });
 
-  test('debugPrint yMMMMd', () {
+  test('print yMMMMd', () {
     String waktu = Waktu().yMMMMd();
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches('\\d{1,2}\\s($regexBulan)\\s\\d{1,4}'));
   });
 
-  test('debugPrint yMMMMEEEEd', () {
+  test('print yMMMMEEEEd', () {
     String waktu = Waktu().yMMMMEEEEd();
-    debugPrint(waktu);
+    print(waktu);
     expect(
         waktu, matches('($regexHari),\\s\\d{1,2}\\s($regexBulan)\\s\\d{1,4}'));
   });
 
-  test('debugPrint EEEE, d MMMM y', () {
+  test('print EEEE, d MMMM y', () {
     String waktu = Waktu().format('EEEE, d MMMM y');
-    debugPrint(waktu);
+    print(waktu);
     expect(
         waktu, matches('($regexHari),\\s\\d{1,2}\\s($regexBulan)\\s\\d{1,4}'));
   });
 
-  test('debugPrint dd MMM yyyy', () {
+  test('print dd MMM yyyy', () {
     String waktu = Waktu().format('dd MMM yyyy');
-    debugPrint(waktu);
+    print(waktu);
     expect(waktu, matches('\\d{1,2}\\s($regexBulanPendek)\\s\\d{1,4}'));
   });
 
   test('Rupiah tanpa 2 angka 0 di belakang', () {
     String rupiah = Rupiah().convertToRupiah(123456789);
-    debugPrint(rupiah);
+    print(rupiah);
     expect(rupiah, "Rp 123.456.789");
   });
 
   test('Rupiah dengan 2 angka 0 di belakang', () {
     String rupiah =
         Rupiah().convertToRupiah(123456789, separator: '.', trailing: '.00');
-    debugPrint(rupiah);
+    print(rupiah);
     expect(rupiah, 'Rp 123.456.789.00');
   });
 }
