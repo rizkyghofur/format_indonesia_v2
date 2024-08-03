@@ -2,6 +2,14 @@ library format_indonesia_v2;
 
 import 'package:intl/intl.dart';
 
+class Rupiah {
+  /// Convert value to "Rp XX.XXX.XXX" as [String]
+  String convertToRupiah(value,
+      {String separator = '.', String trailing = ''}) {
+    return "Rp ${value.toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]}$separator')}$trailing";
+  }
+}
+
 class Waktu {
   late DateTime dateTime;
 

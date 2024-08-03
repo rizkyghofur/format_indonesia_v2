@@ -17,4 +17,8 @@ void main() {
   // using numberic
   var numerik = Numerik(911);
   print(numerik.terbilang()); // sembilan ratus sebelas
+
+  // using rupiah
+  var rupiah = Rupiah();
+  print(rupiah.convertToRupiah(15000)); // Rp 15.000
 }

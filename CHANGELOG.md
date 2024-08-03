@@ -1,3 +1,7 @@
+## 0.0.4
+
+- Added Rupiah as [String] & revised README.md
+
 ## 0.0.3
 
 - Added CHANGELOG.md

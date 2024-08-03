@@ -1,6 +1,6 @@
-# Waktu class
+# format_indonesia
 
-Translate to Indonesian for weekday names, month names, and quarter names, inspired by [DateFormat](https://api.flutter.dev/flutter/intl/DateFormat-class.html).
+Translate to Indonesian for weekday names, month names, quarter names, and Rupiah inspired by [DateFormat](https://api.flutter.dev/flutter/intl/DateFormat-class.html).
 This package is also upgraded version from [format_indonesia](https://pub.dev/packages/format_indonesia)
 
 ## Example
@@ -58,6 +58,22 @@ void main() {
   // using specific time
   DateTime datetime = DateTime.parse('2020-05-31 12:34:13');
   print(Waktu(datetime).format('EEEE, d MMMM y')); // Minggu, 31 Mei 2020
+}
+```
+
+## Rupiah formatter
+
+```dart
+import 'package:format_indonesia_v2/format_indonesia_v2.dart';
+
+void main() {
+  // using rupiah as String
+  var rupiah = Rupiah();
+  print(rupiah.convertToRupiah(123456789)); // Rp 123.456.789
+
+  // using rupiah as String with .00 format
+  print(rupiah =
+        Rupiah().convertToRupiah(123456789, separator: '.', trailing: '.00')); // Rp 123.456.789.00
 }
 ```
 

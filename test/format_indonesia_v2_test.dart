@@ -141,4 +141,17 @@ void main() {
     debugPrint(waktu);
     expect(waktu, matches('\\d{1,2}\\s($regexBulanPendek)\\s\\d{1,4}'));
   });
+
+  test('Rupiah tanpa 2 angka 0 di belakang', () {
+    String rupiah = Rupiah().convertToRupiah(123456789);
+    debugPrint(rupiah);
+    expect(rupiah, "Rp 123.456.789");
+  });
+
+  test('Rupiah dengan 2 angka 0 di belakang', () {
+    String rupiah =
+        Rupiah().convertToRupiah(123456789, separator: '.', trailing: '.00');
+    debugPrint(rupiah);
+    expect(rupiah, 'Rp 123.456.789.00');
+  });
 }
