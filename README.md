@@ -94,6 +94,21 @@ void main() {
 }
 ```
 
+# Emoji class
+
+In this version, provides emoji flag Indonesia 🇮🇩 to text.
+
+## Example
+
+```dart
+import 'package:format_indonesia_v2/format_indonesia_v2.dart';
+
+void main() {
+  var indoEmoji = Emoji().indoEmoji;
+  print("Saya cinta ${Emoji().indoEmoji}"); // Saya Cinta 🇮🇩
+}
+```
+
 # Thank you
 
 It is really helpful if there are ideas, suggestions, or input for next improvement.

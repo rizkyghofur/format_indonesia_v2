@@ -1,3 +1,7 @@
+## 0.0.7
+
+- Added Indonesia Flag Emoji
+
 ## 0.0.6
 
 - Downgrade Min Dart SDK to 3.0

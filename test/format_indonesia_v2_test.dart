@@ -8,6 +8,13 @@ void main() {
   String regexBulan =
       'Januari|Februari|Maret|April|Mei|Juni|Juli|Agustus|September|Oktober|November|Desember';
   String regexKuartal = 'pertama|kedua|ketiga|keempat';
+  String indoEmoji = '\u{1F1EE}\u{1F1E9}';
+
+  test('print emoji Indonesia', () {
+    String emoji = Emoji().indoEmoji;
+    print(emoji);
+    expect(indoEmoji, matches(indoEmoji));
+  });
 
   test('print E', () {
     String waktu = Waktu().E();

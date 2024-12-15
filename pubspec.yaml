@@ -1,6 +1,6 @@
 name: format_indonesia_v2
 description: Library for Indonesian date and numeric formatting, it helps to reformat date and numeric variable to Indonesia language
-version: 0.0.6
+version: 0.0.7
 repository: https://github.com/rizkyghofur/format_indonesia_v2
 
 environment:

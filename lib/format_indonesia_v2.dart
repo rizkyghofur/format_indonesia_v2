@@ -180,3 +180,7 @@ class Numerik {
     return _doTerbilang(number);
   }
 }
+
+class Emoji {
+  String indoEmoji = '🇮🇩';
+}
