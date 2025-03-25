@@ -1,3 +1,8 @@
+## 0.0.8
+
+- Updated intl package to 0.20.2
+- Updated readme
+
 ## 0.0.7
 
 - Added Indonesia Flag Emoji
